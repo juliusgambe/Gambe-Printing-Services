@@ -1,0 +1,93 @@
+.navBar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 998;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: var(--primary-bg-color);
+    transition: ease-in 0.5s;
+}
+
+.navBarHidden{
+    display: none;
+}
+.transparent{
+    background: transparent;
+    /* background-color: white; */
+    transition: ease-in 0.5s;
+}
+
+.navBarIcons{
+    padding: 0px;
+    margin: auto 16px;
+}
+
+
+.title{
+    margin: 0px;
+}
+
+.icon{
+    color: white;
+    z-index: 999;
+}
+.navBarMenu{
+    z-index: 1;
+    background-color: transparent;
+    width: 40%;
+    padding: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navBarHamburger{
+    /* display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px; */
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .navBar{
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .navBarIcons{
+        text-align: center;
+        /* height: 50px;
+        margin: auto; */
+    }
+
+    .navBarMenu{
+        display: none;
+    }
+
+    .navBarMenu_active{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: space-around;
+        height: auto;
+        z-index: 1;
+        background-color: var(--primary-bg-color);
+    }
+
+    .navBarHamburger{
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}

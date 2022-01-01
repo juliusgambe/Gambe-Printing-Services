@@ -1,0 +1,19 @@
+.img_logo{
+    flex-basis: 15%;
+}
+
+@media (max-width: 900px) {
+    .img_logo{
+        flex-basis: 30%;
+    }
+   
+}
+
+
+
+/* .img_logo{
+    object-fit: cover;
+    min-width: 0; 
+    width: 100%;
+    margin: auto;
+} */

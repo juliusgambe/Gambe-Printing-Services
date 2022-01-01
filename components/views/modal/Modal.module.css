@@ -1,0 +1,43 @@
+.modal{
+    background-color: rgba(0, 3, 8, 0.50);
+    z-index: 10000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal_content{
+    background-color: white;
+    border-radius: 16px;
+    margin: 10vh auto;
+}
+
+.close_button{
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    background: transparent;
+    font-size: 2rem;
+    color: white;
+}
+@media only screen and (min-width: 992px)  {
+    .modal_content{
+        width: 70vw;
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .modal_content{
+        width: 70vw;
+        height: 80vh;
+    }
+}
+
+
+@media only screen and (max-width: 576px)  {
+    .modal_content{
+        width: 70vw;
+        height: 80vh;
+    }
+}

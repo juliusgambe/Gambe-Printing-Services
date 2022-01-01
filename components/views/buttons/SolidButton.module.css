@@ -1,0 +1,18 @@
+.btn{
+    background: var(--primary-highlight);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 0px;
+    margin: 8px 0px;
+}
+
+.btn:hover{
+    background: var(--secondary-highlight);
+    transform: translateY(-8px);
+    transition: ease-in 0.5s;
+}

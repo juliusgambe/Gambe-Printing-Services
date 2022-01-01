@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-grow: 0; /* Allow Elements to grow and shrink */
+    flex-shrink: 0;
+    max-width: 100%; /* Limit elements to maximum 100% of their width*/
+}
+
+.container > * {
+    flex-basis: 400px; /* Sets the initial size of the flex item for all elemetns inside container */
+}
+
+.container > img {
+    object-fit: cover;
+    min-width: 0; /* Required for Google Chrome because of bugs */
+    width: 100%;
+}
+@media only screen and (min-width:0px) and (max-width:992px) {
+    .container > * {
+        flex-basis: 300px;
+     }
+}
